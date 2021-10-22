@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Movies by Anvarjon</title>
+</head>
+
+<body>
+    <main>
+        <div id="helpMenu" class="navbar row navbar-dark bg-dark h2 my-3 text-center text-secondary">
+            <div class="navbar-brand col-3">
+                <img src="brand.png" alt="" width="60" class="mx-2">
+                <span class="mx-3 font-italic">Anvarjon's portfolio</span>
+            </div>
+            <!-- <span id="spanPage" class="text-info">1</span> from <span id="spanAllPages" class="text-danger">0</span> -->
+            <form class="form-group  form-inline pt-2 col-8 row" id="searchForm">
+                <input type="text" class="form-control mx-2 text-center col-3" name="" id="searchName" placeholder="Enter film name">
+                <input type='number' class="form-control text-center col-3" name="" id="searchYear" placeholder="Enter year of movie">
+                <input type="submit" class="btn btn-outline-primary mx-2 col-2" value="Search">
+                <div id="pages" class="form-group col-3 ">
+                    <input type="number" class="form-control-sm rounded-3 w-25  mr-2" name="" id="spanPage" placeholder="Page:">
+                    <span class="text-secondary">/</span>
+                    <span id="spanAllPages" class="mx-2 text-danger">0</span>
+                </div>
+            </form>
+
+        </div>
+        <ul id="main" class="container d-flex flex-wrap justify-content-around "></ul>
+    </main>
+    <template>
+        <li></li>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
